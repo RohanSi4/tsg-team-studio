@@ -6,6 +6,27 @@ Common Hour is a fictional Charlottesville startup that handles class reservatio
 
 Those conversations are leads. You can pursue either, challenge them, or find a better question. Your team owns the problem statement, the technology, and the choice of what to ship. All people, conversations, and operating records in this exercise are fictional.
 
+## Try a working feature in five minutes
+
+One teammate can fork this repo on GitHub and invite the others as collaborators. Each teammate clones the team fork, opens its directory, and runs these commands with Python 3.8 or newer. Both commands use only the standard library.
+
+```sh
+python3 explore.py
+python3 schedule.py
+```
+
+You’ll see one Charlottesville studio’s classes on January 15, with the seat capacity and number of booking requests for each. Try another studio or day with `python3 schedule.py --studio 4 --date 2026-02-07`. Requests include people who ended up waitlisted or cancelled.
+
+[schedule.py](schedule.py) is a small feature you can take apart. Its `daily_schedule` function reads the data, and `main` handles the terminal interaction. For a first practice PR, try showing the number of people who actually attended beside requests. Ask a teammate to check one class against the raw records. Or start with a feature of your own.
+
+## What would your team try?
+
+- **For a front-desk worker:** Imagine covering a shift at a studio you’ve never visited. What would you want to know before the first class arrives?
+- **For a member:** Two people both see “class full.” One can come back tomorrow. The other has only a lunch break. What would make the experience useful to each?
+- **For an owner:** A noon class drew six people. What else would you want to know before changing next month’s schedule?
+
+These are optional starting points. A team might build a desk tool, prototype a member interaction, simulate a policy change, or pursue a question nobody else picked. You can change the interface, use another language, or add fictional inputs. Label any new assumptions so another team can tell what came from the records and what you invented for the pilot.
+
 ## Your first meeting
 
 1. Each developer opens the data and brings one observation, one uncertainty, and a question they would ask a studio owner, member, or staffer. Save the query or calculation behind the observation.
